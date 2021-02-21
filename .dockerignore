@@ -1,0 +1,10 @@
+api
+bin
+test
+vendor
+.env.example
+.gitignore
+.gitmodules
+docker-compose-yml
+Makefile
+README.md

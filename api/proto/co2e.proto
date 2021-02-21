@@ -1,0 +1,18 @@
+syntax = "proto3";
+option go_package = ".;api";
+package api;
+
+message Request {
+  string start = 1;
+  string end = 2;
+  string transportationMethod = 3;
+}
+
+message Response {
+  float co2e = 1;
+  string error = 2;
+}
+
+service Service {
+  rpc Calculate(Request) returns (Response) {}
+}
